@@ -1,3 +1,15 @@
+.message {
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.error {
+  color: red;
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid darkblue;
