@@ -16,7 +16,7 @@ async function getMovies() {
             resultsContainer.innerHTML += `<a href="details.html?id=${movie.imdbID}" class="movies">
             <img class="moviesImage" src="${movie.Poster}" alt="${movie.Title}"/>
             <h1>${movie.Title}</h1>
-            <p>Year released: ${movie.Released}</p>
+            <p>Year released: ${movie.Year}</p>
             </a>`
         });
 

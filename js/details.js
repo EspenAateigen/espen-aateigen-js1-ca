@@ -34,25 +34,26 @@ getMovie();
 
 function createHtml(movie) {
     newTitle.innerHTML = `${movie.Title};`
-    detailContainer.innerHTML = `<h1>${movie.Title}</h1>
-                            <div class="detailsImage"><img src="${movie.Poster}" alt="${movie.Title}"/></div>
-                            <div class="movieDetails">
-                                <div class="rated"><p>Rated: ${movie.Rated}</p>
-                                <div class="runtime"><p>Runtime: ${movie.Runtime}</p>
-                                <div class="genre"><p>Genre: ${movie.Genre}</p>
-                                <div class="director"><p>Director: ${movie.Director}</p>
-                                <div class="writer"><p>Writer: ${movie.Writer}</p>
-                                <div class="actors"><p>Actors: ${movie.Actors}</p>
-                                <div class="language"><p>Language: ${movie.Language}</p>
-                                <div class="country"><p>Country: ${movie.Country}</p>
-                                <div class="awards"><p>Awards: ${movie.Awards}</p>
-                                <div class="metacritic"><p>Metacritic: ${movie.Metacritic}</p>
-                                <div class="rating"><p>IMDb Rating: ${movie.imdbRating}</p>
-                                <div class="boxOffice"><p>Box Office: ${movie.boxOffice}</p>
-                                
-
-                            </div>
-                            <time class="released">Released: ${movie.Released}</time>
-                            <div class="plot"><p>Plot: : ${movie.Plot}</p>
+    detailContainer.innerHTML = `<h1 class="title">${movie.Title}</h1>
+                                <div class="detailsContainer">
+                                <div class="detailsImage"><img src="${movie.Poster}" alt="${movie.Title}"/></div>                    
+                                <div class="movieDetails">
+                                <div class="rated"><p>Rated: ${movie.Rated}</p></div>
+                                <div class="runtime"><p>Runtime: ${movie.Runtime}</p></div>
+                                <div class="genre"><p>Genre: ${movie.Genre}</p></div>
+                                <div class="director"><p>Director: ${movie.Director}</p></div>
+                                <div class="writer"><p>Writer: ${movie.Writer}</p></div>
+                                <div class="actors"><p>Actors: ${movie.Actors}</p></div>
+                                <div class="language"><p>Language: ${movie.Language}</p></div>
+                                <div class="country"><p>Country: ${movie.Country}</p></div>
+                                <div class="awards"><p>Awards: ${movie.Awards}</p></div>
+                                <div class="metacritic"><p>Metacritic: ${movie.Metacritic}</p></div>
+                                <div class="rating"><p>IMDb Rating: ${movie.imdbRating}</p></div>
+                                <div class="boxOffice"><p>Box Office: ${movie.BoxOffice}</p></div>
+                                <time class="released">Released: ${movie.Released}</time>
+                                </div>
+                                </div>
+                            
+                            <div class="plot"><p>Plot: : ${movie.Plot}</p></div>
                             `
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact form</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="data:;base64,=" />
+    </head>
+    <body>
+        <div class="breadcrumb-nav"><a href="/">Back to movies</a></div>
+       <div class="container">
+        <div id="message"></div>
+           <form id="contactForm">
+            <div>
+                <label>
+                    Name (required)
+                    <input name="fullName" id="fullName" />
+                </label>
+                <div class="formError" id="fullNameError">Please enter a valid name</div>
+            </div>
+            <div>
+                <label>
+                    Subject (required)
+                    <input name="subject" id="subject" />
+                </label>
+                <div class="formError" id="subjectError">Please enter a valid subject</div>
+            </div>
+            <div>
+                <label>
+                    Email (required)
+                    <input name="email" id="email" />
+                </label>
+                <div class="formError" id="emailError">Please enter a valid email</div>
+            </div>
+           <div>
+               <label>
+                   Adress (required)
+                   <input name="adress" id="adress"/>
+               </label>
+               <div class="formError" id="adressError">Please enter a valid adress</div>
+           </div>
+
+            <button>Submit</button>
+
+            </form>
+        </div>
+
+      
+
+        <script src="js/components/message.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>

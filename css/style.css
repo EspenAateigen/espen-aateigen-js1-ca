@@ -1,3 +1,13 @@
+/*Global*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .message {
   padding: 1rem;
   border: 1px solid grey;
@@ -26,4 +36,93 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*Index*/
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.moviesImage {
+  display: flex;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movies {
+  text-decoration: none;
+  color: black;
+  max-width: 350px;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+/*Details*/
+
+.detailsContainer {
+  display: flex;
+}
+
+.movieDetails {
+  margin-left: 3rem;
+}
+
+.plot {
+  font-size: 2rem;
+}
+
+/*Contact*/
+form {
+  padding: 2em;
+  background: rgb(228, 228, 228);
+  border-radius: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: rgb(196, 134, 2);
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.formError {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.validated {
+  color: green;
+}
+
+.notValidated {
+  color: red;
 }
